@@ -5,6 +5,7 @@
 	"ethereum",
 	"wallet"
   ],
+  "license" : "MIT",
   "authors": [
 	{
 	  "name": "Latrell Chan",
