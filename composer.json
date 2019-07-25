@@ -1,0 +1,40 @@
+{
+  "name": "latrell/ethereum",
+  "description": "Ethereum wallet client",
+  "keywords": [
+	"ethereum",
+	"wallet"
+  ],
+  "authors": [
+	{
+	  "name": "Latrell Chan",
+	  "email": "i@latrell.me"
+	}
+  ],
+  "require": {
+	"php": "^7.0",
+	"ext-openssl": "*",
+	"sop/asn1": "^3.3",
+	"sop/crypto-encoding": "^0.2.0",
+	"sop/crypto-types": "^0.2.1",
+	"kornrunner/keccak": "^1.0",
+	"symfony/dotenv": "^4.0",
+	"sc0vu/web3.php": "dev-master",
+	"curl/curl": "^2.2"
+  },
+  "autoload": {
+	"psr-4": {
+	  "Latrell\\Ethereum\\": "src/Latrell/Ethereum/"
+	}
+  },
+  "extra": {
+	"laravel": {
+	  "providers": [
+		"Latrell\\Ethereum\\EthereumServiceProvider"
+	  ],
+	  "aliases": {
+		"Ethereum": "Latrell\\Ethereum\\Facades\\Ethereum"
+	  }
+	}
+  }
+}
