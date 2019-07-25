@@ -3,7 +3,7 @@
 namespace Latrell\Ethereum;
 
 use Curl\Curl;
-use kornrunner\keccak;
+use kornrunner\Keccak;
 use Latrell\Ethereum\Exception as EthereumException;
 use Sop\CryptoEncoding\PEM;
 use Sop\CryptoTypes\Asymmetric\EC\ECPrivateKey;
